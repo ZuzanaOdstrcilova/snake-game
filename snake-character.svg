@@ -1,0 +1,73 @@
+<svg width="280" height="380" viewBox="0 0 280 380" xmlns="http://www.w3.org/2000/svg">
+  <!-- Snake body - main S curve -->
+  <!-- Bottom curve part -->
+  <path d="M50 340 Q30 320, 40 290 Q50 260, 80 250 Q110 240, 140 250 Q170 260, 180 290 Q190 320, 170 340 Q150 360, 120 350 Q90 340, 70 340 Q50 340, 50 340"
+        fill="#4CAF50" stroke="#2E4D00" stroke-width="5"/>
+
+  <!-- Middle curve -->
+  <path d="M140 250 Q170 230, 180 200 Q190 170, 160 150 Q130 130, 100 150 Q70 170, 80 200 Q90 230, 120 240 Q140 245, 140 250"
+        fill="#4CAF50" stroke="#2E4D00" stroke-width="5"/>
+
+  <!-- Upper neck part -->
+  <path d="M100 150 Q70 130, 60 100 Q50 70, 80 50 Q110 30, 140 50 Q170 70, 160 100 Q150 130, 120 140 Q105 145, 100 150"
+        fill="#4CAF50" stroke="#2E4D00" stroke-width="5"/>
+
+  <!-- Snake head - larger and rounder -->
+  <ellipse cx="120" cy="80" rx="45" ry="35" fill="#66BB6A" stroke="#2E4D00" stroke-width="5"/>
+
+  <!-- Snout area with yellow belly -->
+  <ellipse cx="95" cy="65" rx="28" ry="18" fill="#C5E1A5" stroke="#2E4D00" stroke-width="4"/>
+
+  <!-- Eyes - large white ovals -->
+  <ellipse cx="100" cy="75" rx="15" ry="18" fill="white" stroke="#2E4D00" stroke-width="4"/>
+  <ellipse cx="135" cy="78" rx="15" ry="18" fill="white" stroke="#2E4D00" stroke-width="4"/>
+
+  <!-- Eye pupils - large black ovals -->
+  <ellipse cx="102" cy="80" rx="9" ry="12" fill="black"/>
+  <ellipse cx="135" cy="82" rx="9" ry="12" fill="black"/>
+
+  <!-- Eye shine highlights -->
+  <ellipse cx="105" cy="76" rx="3" ry="4" fill="white"/>
+  <ellipse cx="138" cy="78" rx="3" ry="4" fill="white"/>
+
+  <!-- Nostrils -->
+  <ellipse cx="82" cy="62" rx="2.5" ry="2" fill="#2E4D00"/>
+  <ellipse cx="92" cy="60" rx="2.5" ry="2" fill="#2E4D00"/>
+
+  <!-- Open mouth with black interior -->
+  <path d="M70 75 Q95 95 120 80 Q130 85 125 95 Q100 110, 75 95 Q65 85, 70 75"
+        fill="black" stroke="#2E4D00" stroke-width="3"/>
+
+  <!-- Yellow inner mouth/throat -->
+  <path d="M78 82 Q95 92 115 85" fill="#FFEB3B"/>
+
+  <!-- Red tongue - forked -->
+  <path d="M95 95 L90 105 M95 95 L100 105" stroke="#E53935" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Yellow belly segments -->
+  <path d="M80 110 Q110 115 140 110" stroke="#8BC34A" stroke-width="4" fill="none"/>
+  <path d="M100 140 Q130 145 160 140" stroke="#8BC34A" stroke-width="4" fill="none"/>
+  <path d="M80 180 Q110 185 140 180" stroke="#8BC34A" stroke-width="4" fill="none"/>
+  <path d="M120 220 Q150 225 180 220" stroke="#8BC34A" stroke-width="4" fill="none"/>
+  <path d="M90 260 Q120 265 150 260" stroke="#8BC34A" stroke-width="4" fill="none"/>
+  <path d="M60 300 Q90 305 120 300" stroke="#8BC34A" stroke-width="4" fill="none"/>
+
+  <!-- Green spots on body -->
+  <ellipse cx="110" cy="120" rx="8" ry="6" fill="#388E3C" opacity="0.8"/>
+  <ellipse cx="130" cy="160" rx="8" ry="6" fill="#388E3C" opacity="0.8"/>
+  <ellipse cx="90" cy="200" rx="8" ry="6" fill="#388E3C" opacity="0.8"/>
+  <ellipse cx="150" cy="240" rx="8" ry="6" fill="#388E3C" opacity="0.8"/>
+  <ellipse cx="110" cy="280" rx="8" ry="6" fill="#388E3C" opacity="0.8"/>
+  <ellipse cx="70" cy="320" rx="8" ry="6" fill="#388E3C" opacity="0.8"/>
+
+  <!-- Additional smaller spots -->
+  <ellipse cx="90" cy="140" rx="5" ry="4" fill="#2E7D32" opacity="0.6"/>
+  <ellipse cx="150" cy="180" rx="5" ry="4" fill="#2E7D32" opacity="0.6"/>
+  <ellipse cx="120" cy="210" rx="5" ry="4" fill="#2E7D32" opacity="0.6"/>
+  <ellipse cx="80" cy="250" rx="5" ry="4" fill="#2E7D32" opacity="0.6"/>
+  <ellipse cx="140" cy="290" rx="5" ry="4" fill="#2E7D32" opacity="0.6"/>
+
+  <!-- Head spots -->
+  <ellipse cx="140" cy="65" rx="6" ry="5" fill="#388E3C" opacity="0.7"/>
+  <ellipse cx="155" cy="85" rx="5" ry="4" fill="#2E7D32" opacity="0.5"/>
+</svg>

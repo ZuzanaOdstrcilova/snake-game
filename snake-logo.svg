@@ -1,0 +1,26 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Snake body in S curve -->
+  <path d="M6 24 Q4 22, 5 20 Q6 18, 8 17 Q10 16, 12 17 Q14 18, 15 20 Q16 22, 14 24 Q12 26, 10 25 Q8 24, 7 24 Q6 24, 6 24"
+        fill="#4CAF50" stroke="#2E4D00" stroke-width="1"/>
+
+  <!-- Middle curve -->
+  <path d="M12 17 Q14 15, 15 13 Q16 11, 14 10 Q12 9, 10 10 Q8 11, 9 13 Q10 15, 11 16 Q12 16.5, 12 17"
+        fill="#4CAF50" stroke="#2E4D00" stroke-width="1"/>
+
+  <!-- Snake head -->
+  <ellipse cx="11" cy="11" rx="4" ry="3" fill="#66BB6A" stroke="#2E4D00" stroke-width="1"/>
+
+  <!-- Eyes -->
+  <ellipse cx="10" cy="10.5" rx="1" ry="1.2" fill="white"/>
+  <ellipse cx="12" cy="10.5" rx="1" ry="1.2" fill="white"/>
+  <ellipse cx="10" cy="10.8" rx="0.6" ry="0.8" fill="black"/>
+  <ellipse cx="12" cy="10.8" rx="0.6" ry="0.8" fill="black"/>
+
+  <!-- Mouth -->
+  <path d="M8 12 Q11 14 14 12" stroke="#2E4D00" stroke-width="0.8" fill="none"/>
+
+  <!-- Small decorative spots -->
+  <ellipse cx="13" cy="8" rx="0.8" ry="0.6" fill="#388E3C" opacity="0.7"/>
+  <ellipse cx="9" cy="14" rx="0.8" ry="0.6" fill="#388E3C" opacity="0.7"/>
+  <ellipse cx="11" cy="20" rx="0.8" ry="0.6" fill="#388E3C" opacity="0.7"/>
+</svg>

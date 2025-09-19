@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="snake.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="snake-character">
+            <img src="had.webp" alt="Snake Character">
+        </div>
+
+        <div class="game-container">
+            <div class="header">
+                <div class="title-section">
+                    <h1>Snake Game</h1>
+                </div>
+                <div class="game-info">
+                    <div class="info-container-header">
+                        <button class="info-button" id="infoBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="#58cc02" stroke-width="2"/>
+                                <path d="M12 16V12" stroke="#58cc02" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M12 8H12.01" stroke="#58cc02" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="info-tooltip" id="infoTooltip">
+                            <p>Use arrow keys to move • Eat the flowers</p>
+                            <p>Enter: Start • Space: Pause • Esc: Restart</p>
+                        </div>
+                    </div>
+                    <div class="score-card">
+                        <span class="label">Score</span>
+                        <span class="value" id="score">0</span>
+                    </div>
+                    <div class="score-card">
+                        <span class="label">Best</span>
+                        <span class="value" id="high-score">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-area">
+                <canvas id="gameCanvas" width="1200" height="520"></canvas>
+                <div class="particles" id="particles"></div>
+            </div>
+
+            <div class="controls">
+                <div class="control-row">
+                    <div class="button-group">
+                        <button id="startBtn" class="btn primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                            </svg>
+                            Start
+                        </button>
+                        <button id="pauseBtn" class="btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z" fill="currentColor"/>
+                            </svg>
+                            Pause
+                        </button>
+                        <button id="restartBtn" class="btn danger">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C9.25022 4 6.82447 5.38734 5.38451 7.50024" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 8L4 7L5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Restart
+                        </button>
+                    </div>
+                    <div class="speed-control">
+                        <label for="speedSlider">Speed:</label>
+                        <div class="slider-container">
+                            <input type="range" id="speedSlider" min="1" max="5" value="1" step="1">
+                            <span id="speedDisplay">1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-over" id="gameOver">
+                <div class="game-over-content">
+                    <h2>Game Over!</h2>
+                    <p>Your Score: <span id="finalScore">0</span></p>
+                    <button onclick="restartGame()" class="btn primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                        </svg>
+                        Play Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
